@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Susan A.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* -------- RESET -------- */
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{height:100%}
+
+    /* -------- BASE -------- */
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#0a0a0a;
+      color:#f2f2f2;
+      overflow:hidden;
+    }
+    a{text-decoration:none}
+
+    /* -------- HEADER -------- */
+    header{
+      padding:18px 40px;
+      background:#000;
+      box-shadow:0 1px 8px rgba(255,65,108,.25);
+    }
+    .logo{
+      font-size:1.7rem;font-weight:700;
+      letter-spacing:1px;
+      color:#ff4b91;
+    }
+
+    /* -------- HERO -------- */
+    .hero{
+      height:calc(100vh - 70px);
+      display:flex;flex-wrap:wrap;
+      align-items:center;justify-content:center;
+      gap:60px;padding:30px;
+      background:linear-gradient(135deg,#0f0f0f 0%,#1a1a1a 100%);
+      text-align:left;
+    }
+    .hero-text{max-width:500px}
+
+    .hero-text h1{
+      font-size:2.4rem;font-weight:600;margin-bottom:10px;color:#fff
+    }
+    .hero-text h1 span{color:#ff4b91}
+    .tagline{
+      height:1.2em;
+      font-size:1rem;font-weight:600;
+      color:#ffb3d9;border-right:2px solid #ff4b91;
+      white-space:nowrap;overflow:hidden;
+      animation:typing 4s steps(30,end) infinite,
+               blink .8s step-end infinite;
+    }
+    .hero-text p{
+      margin-top:14px;font-size:.95rem;line-height:1.6;color:#ccc
+    }
+    .btn{
+      margin-top:22px;padding:10px 24px;
+      background:#ff4b91;border-radius:25px;
+      font-weight:600;color:#fff;
+      box-shadow:0 0 15px #ff4b91;
+      transition:background .3s;
+      display:inline-block
+    }
+    .btn:hover{background:#e63c79}
+
+    /* -------- IMAGE -------- */
+    .hero-img img {
+      width: 320px;
+      height: 320px;
+      max-width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 25px rgba(255,75,145,0.45);
+      animation: float 3.5s ease-in-out infinite;
+    }
+
+    /* -------- ANIMATIONS -------- */
+    @keyframes typing{0%{width:0}50%{width:100%}100%{width:0}}
+    @keyframes blink{50%{border-color:transparent}}
+    @keyframes float{
+      0%,100%{transform:translateY(0) rotate(0deg)}
+      50%   {transform:translateY(-10px) rotate(2deg)}
+    }
+
+    /* -------- RESPONSIVE -------- */
+    @media(max-width:768px){
+      body{overflow:auto}
+      .hero{
+        flex-direction:column;
+        text-align:center;
+        height:auto;
+        padding:60px 20px
+      }
+      .hero-text h1{font-size:2rem}
+      .hero-img {
+        margin-top:28px;
+      }
+      .hero-img img {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header><div class="logo">SUSAN A.</div></header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Susan Abdullahi</span></h1>
+      <div class="tagline">Full‑Stack Developer | Graphic Designer | Ad Creator</div>
+      <p>I build stunning websites, craft modern ads, and help brands shine. Let’s work together!</p>
+      <a class="btn" target="_blank"
+         href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ00jsOXEuPwO5LvK3Reodrnk55kMALbmCReGhZZOQ0QqWifEEulo9iHZOjxL_TT9pf6jvXMrNOR">
+        📅 Book Appointment
+      </a>
+    </div>
+
+    <div class="hero-img">
+      <img
+        src="https://img.freepik.com/premium-vector/hijab-woman-works-while-standing-home-holds-laptop-flat-illustration_828072-332.jpg?semt=ais_hybrid&w=740"
+        alt="Hijabi developer illustration">
+    </div>
+  </section>
+
+</body>
+</html>
