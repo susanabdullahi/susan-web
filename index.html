@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Susan A.</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* -------- RESET -------- */
     *{margin:0;padding:0;box-sizing:border-box}
     html,body{height:100%}
-
-    /* -------- BASE -------- */
     body{
       font-family:'Poppins',sans-serif;
       background:#0a0a0a;
@@ -18,8 +16,6 @@
       overflow:hidden;
     }
     a{text-decoration:none}
-
-    /* -------- HEADER -------- */
     header{
       padding:18px 40px;
       background:#000;
@@ -30,8 +26,6 @@
       letter-spacing:1px;
       color:#ff4b91;
     }
-
-    /* -------- HERO -------- */
     .hero{
       height:calc(100vh - 70px);
       display:flex;flex-wrap:wrap;
@@ -41,7 +35,6 @@
       text-align:left;
     }
     .hero-text{max-width:500px}
-
     .hero-text h1{
       font-size:2.4rem;font-weight:600;margin-bottom:10px;color:#fff
     }
@@ -66,8 +59,18 @@
       display:inline-block
     }
     .btn:hover{background:#e63c79}
-
-    /* -------- IMAGE -------- */
+    .social-links {
+      margin-top: 18px;
+    }
+    .social-links a {
+      margin-right: 16px;
+      color: #ff4b91;
+      font-size: 1.4rem;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #fff;
+    }
     .hero-img img {
       width: 320px;
       height: 320px;
@@ -77,16 +80,12 @@
       box-shadow: 0 0 25px rgba(255,75,145,0.45);
       animation: float 3.5s ease-in-out infinite;
     }
-
-    /* -------- ANIMATIONS -------- */
     @keyframes typing{0%{width:0}50%{width:100%}100%{width:0}}
     @keyframes blink{50%{border-color:transparent}}
     @keyframes float{
       0%,100%{transform:translateY(0) rotate(0deg)}
       50%   {transform:translateY(-10px) rotate(2deg)}
     }
-
-    /* -------- RESPONSIVE -------- */
     @media(max-width:768px){
       body{overflow:auto}
       .hero{
@@ -102,6 +101,10 @@
       .hero-img img {
         width: 220px;
         height: 220px;
+      }
+      .social-links a {
+        font-size: 1.3rem;
+        margin-right: 12px;
       }
     }
   </style>
@@ -121,6 +124,12 @@
          href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ00jsOXEuPwO5LvK3Reodrnk55kMALbmCReGhZZOQ0QqWifEEulo9iHZOjxL_TT9pf6jvXMrNOR">
         📅 Book Appointment
       </a>
+
+      <div class="social-links">
+        <a href="https://github.com/susanabdullahi" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/susan-abdullahi-a87959298/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/905077614337" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
     </div>
 
     <div class="hero-img">
